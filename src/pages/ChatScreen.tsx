@@ -187,6 +187,13 @@ function buildSystemPrompt(
       "journal un ou plusieurs repas déjà décrits plus haut dans la conversation, republie-les simplement " +
       "dans le bloc <meals> de cette réponse (même sans nouvelle suggestion), en reprenant les mêmes " +
       "aliments et quantités.",
+    '',
+    "Les valeurs nutritionnelles que tu donnes de mémoire (hors aliments listés ci-dessus, dont les " +
+      "chiffres viennent du catalogue de l'application et sont fiables) restent des estimations, parfois " +
+      "fausses — n'affiche jamais une précision que tu n'as pas. Si l'utilisateur corrige une valeur, " +
+      "utilise sa correction pour le reste de cette conversation, mais ne prétends jamais que tu vas t'en " +
+      "souvenir « la prochaine fois » ou dans une future conversation : tu ne conserves aucune mémoire " +
+      "au-delà de cet échange.",
   ].join('\n')
 }
 
